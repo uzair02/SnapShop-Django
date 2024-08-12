@@ -1,0 +1,13 @@
+.nav-link {
+    transition: transform 0.3s;
+    transition: all 0.1s ease-in-out; 
+  }
+  
+  .nav-link:hover {
+    transform: translateY(-10px); 
+    border-bottom: 1px solid red;
+    font-weight: bold;
+
+    
+  }
+  

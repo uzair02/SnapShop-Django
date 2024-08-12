@@ -1,0 +1,9 @@
+.star {
+    font-size: 24px; /* Adjust size as needed */
+    cursor: pointer;
+  }
+  
+  .checked {
+    color: gold; /* Change color to gold when checked */
+  }
+  

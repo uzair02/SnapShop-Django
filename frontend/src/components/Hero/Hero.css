@@ -1,0 +1,190 @@
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-size: 1000% 1000% !important;
+    -webkit-animation: changeColors 10s ease infinite;
+    -moz-animation: changeColors 10s ease infinite;
+    -o-animation: changeColors 10s ease infinite;
+    animation: changeColors 10s ease infinite;
+  }
+
+
+
+    @-webkit-keyframes changeColors {
+
+
+
+    0% {
+
+
+
+        background-position: 0 50%;
+
+
+
+    }
+
+
+
+    50% {
+
+
+
+        background-position: 100% 50%;
+
+
+
+    }
+
+
+
+    100% {
+
+
+
+        background-position: 0 50%;
+
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust the shadow as needed */
+}
+
+.searchbar {
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search_input {
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color: transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+  }
+
+    /* Style for the container */
+    .file-upload-container {
+      position: relative;
+      width: 0;
+      margin: 0;
+      opacity: 0; /* Initially set opacity to 0 */
+      visibility: hidden; /* Initially set visibility to hidden */
+      transition: width 0.4s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.4s cubic-bezier(0.23, 1, 0.32, 1), visibility 0.4s cubic-bezier(0.23, 1, 0.32, 1); 
+    }
+  
+      /* Style for the input */
+      .file-input {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+      }
+  
+      /* Style for the custom button */
+      .custom-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #494c52;
+        color: #9b9b9b;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+      }
+  
+      /* Style for the button text */
+      .button-text {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+  
+      .custom-button:hover {
+        color:red;
+        cursor: copy;
+      }
+
+
+    .searchbar:hover > .search_input{
+
+    padding: 0 10px;
+
+    width: 350px;
+
+    caret-color:red;
+
+    transition: width 0.4s linear;
+
+    }
+
+
+
+    .searchbar:hover > .search_icon{
+
+    background: white;
+
+    color: #e74c3c;
+
+    }
+
+    .searchbar:hover > .file-upload-container {
+      margin: 20px;
+      width: 120px;
+      opacity: 1; 
+      visibility: visible; 
+    }
+
+
+    .search_icon{
+
+    height: 40px;
+
+    width: 40px;
+
+    float: right;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    color:white;
+
+    }
+
+
+    .card-img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }

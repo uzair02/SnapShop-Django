@@ -1,0 +1,45 @@
+h1 {
+  padding: 10px 0;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+  }
+  a {
+    &:hover {
+      text-decoration: initial;
+    }
+  }
+  .text-muted i {
+    margin: 0 10px;
+  }
+}
+
+  
+.card{
+  overflow:hidden;
+  border-radius:10px;
+  min-height:500px;
+
+}
+
+.img-left{
+  width:45%;
+  background: url("./RegImg/form2.png") center;
+  background-size: cover;
+}
+
+.card-body{
+  padding:2rem;
+}
+
+input[type = 'email'],input[type = 'password']{
+  border-radius:100px;
+  border:none;
+  background: #E3F2FD;
+}
+input[type = 'submit'], input[type = 'button']{
+  border-radius:100px;
+}
